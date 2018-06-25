@@ -1,0 +1,88 @@
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px
+}
+
+.describe,
+.award {
+    font-weight: bold;
+    font-size: 25px
+}
+
+.images {
+    width: 400px;
+    height: 400px;
+}
+
+.block {
+    margin: 10px;
+    padding: 15px;
+    height: 736px;
+    margin-left: 300px;
+    margin-right: auto;
+    width: 600px;
+    display: inline-table;
+    text-align: center;
+    border: 20px double rgb(165, 163, 16);
+    background-color: rgb(231, 235, 179);
+}
+
+
+
+
+
+
+}
+
+.green {
+    border: 20px double green;
+    background-color: aquamarine;
+}
+
+.red {
+    border: 20px double red;
+    background-color: rgb(253, 210, 218);
+}
+
+.message {
+    font-size: 25px;
+    padding: 20px
+}
+
+.incBttn,
+.decBttn {
+    margin: 5px;
+    background-color: rgb(216, 143, 75);
+    color: white;
+    border: 1px solid black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 10px 10px 6px -3px #888888;
+    border-radius: 5px
+}
+
+.rate {
+    font-size: 25px;
+}
+
+.em {
+    margin-right: 5px;
+    font-size: 20px
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px
+}
+
+img {
+    border: 5px solid black;
+}
+
+.description {
+    font-size: 20px
+}

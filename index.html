@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Restraunt Rating App</title>
+</head>
+
+<body ng-app="ratingApp">
+    <div ng-controller="ratingAppController as rate">
+        <h1>Restaurants</h1>            
+        <div ng-repeat="x in rate.restaurant track by $index" class="block" ng-class="{green: x.rating>4, red: x.rating<2}">
+            <div class="name">{{x.name}}</div>
+            <img ng-src="{{x.image}}" class="images">
+            <div class="description">
+                <span class="describe">Description: </span>{{x.description}}</div>
+            <div class="rate">
+                <span class="award">Rating: </span>{{x.rating}}</div>
+            <button class="incBttn" ng-click="rate.incrementRating(x)">
+                <i class="em em---1"></i>Like</button>
+            <button class="decBttn" ng-click="rate.decrementRating(x)">
+                <i class="em em--1"></i>Unlike </button>
+            <div class="message">{{x.message}}</div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/controllers/ratingsController.js"></script>
+    <script src="js/services/ratingService.js"></script>
+</body>
+
+</html>
