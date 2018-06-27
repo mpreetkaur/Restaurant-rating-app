@@ -19,7 +19,7 @@
     margin: 10px;
     padding: 15px;
     height: 736px;
-    margin-left: 300px;
+    margin-left: auto;
     margin-right: auto;
     width: 600px;
     display: inline-table;
@@ -29,7 +29,7 @@
 }
 .green {
     border: 20px double green;
-    background-color: aquamarine;
+    background-color: #56cc5b;
 }
 
 .red {
